@@ -1,9 +1,11 @@
-import Link from 'next/link'
+import Home from '../components/home'
+import Projects from '../components/projects'
 
-export default function Home() {
+export default function Main() {
   return (
-    <div>
-      Hello World. <Link href="/about">About</Link>
+    <div className="main">
+      <Home />
+      <Projects />
     </div>
   )
 }
