@@ -81,7 +81,7 @@ export default function Projects() {
         <>
             <Image src={arrow} alt="Arrow" onClick={executeScroll} />
             <div ref={ref}>
-                <Grid container>
+                <Grid container spacing = {4}>
                     {weeks.map(week => (
                         <Grid item xs={12} sm={6} md={4}>
                             <Project name={week.name} image={week.image} link={week.link}/>
