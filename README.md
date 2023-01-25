@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome! This is a website to showcase my progress in [PS70: Introduction to Digital Fabrication] (https://nathanmelenbrink.github.io/ps70/index.html) at Harvard.
+Welcome! This is a website to showcase my progress in [PS70: Introduction to Digital Fabrication](https://nathanmelenbrink.github.io/ps70/index.html) at Harvard.
 
 ## How to Use
 
