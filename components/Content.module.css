@@ -1,0 +1,36 @@
+.button {
+    background-color: white;
+    border-radius: 30px;
+    color: black;
+    font-size: large;
+    border: 4px solid #0098db;
+    transition-duration: 0.4s;
+    width: 180px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.button:hover {
+    background-color: #0098db;
+    color: white;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin: 40px;
+}
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 40px;
+}
