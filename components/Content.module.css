@@ -34,3 +34,12 @@
     font-weight: 300;
     line-height: 40px;
 }
+
+.link {
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}

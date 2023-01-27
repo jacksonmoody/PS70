@@ -23,7 +23,7 @@ export default function About() {
         <div className={styles.text}>
           <p>Hi, I'm Jackson! I'm currently a freshman at Harvard College studying Mechanical Engineering and Computer Science.</p>
           <p>While I was born just a few minutes from Harvard, I have lived most of my life in Boulder, Colorado. When I'm not grinding over psets, you can probably find me skiing, biking, or <span>&#40;</span> badly <span>&#41;</span> playing the piano. </p>
-          <p>At Harvard, I am also a member of Tech for Social Good, Harvard College Engineering Society, various theater productions, and a bunch of other random clubs lol. I also love to make things, and I am super excited to be in PS70 this semester!</p>
+          <p>At Harvard, I am also a member of <a href="https://socialgood.hcs.harvard.edu/" target="_blank" className={styles.link}>Tech for Social Good</a>, <a href="https://hces.seas.harvard.edu/" target="_blank" className={styles.link}>Harvard College Engineering Society</a>, various theater productions, and a bunch of other random clubs lol. I also love to make things, and I am super excited to be in PS70 this semester!</p>
         </div>
 
         <Link href="/">

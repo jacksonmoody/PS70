@@ -3,6 +3,10 @@
     text-decoration: none;
 }
 
+.link:hover {
+    text-decoration: underline;
+}
+
 .container {
     display: flex;
     flex-direction: row;
