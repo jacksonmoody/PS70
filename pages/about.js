@@ -12,7 +12,7 @@ export default function About() {
       <Head>
         <title>PS70 Portfolio: About</title>
       </Head>
-      <Header image="https://i.ibb.co/S517XpH/gradient-dark-blue-futuristic-digital-grid-background.jpg" title="About Me" />
+      <Header image="https://i.ibb.co/QcnymSY/Screenshot-2023-01-27-at-1-30-42-AM.jpg" title="About Me" />
 
       <Container maxWidth="sm">
 
