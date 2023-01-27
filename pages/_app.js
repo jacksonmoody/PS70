@@ -1,5 +1,6 @@
 import './styles.css'
 import Head from 'next/head'
+import Script from 'next/script'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -10,6 +11,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
       </Head>
+      <Script src="../lib/strapdown.js" />
       <Component {...pageProps} />
     </>
   )
