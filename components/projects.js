@@ -12,67 +12,67 @@ export default function Projects() {
     const weeks = [
         {
             name: "Week 1",
-            image: "https://i.ibb.co/cr8dZ1t/week1.jpg",
+            image: "https://i.imgur.com/TpPyGBy.jpeg",
             link: "/week1"
         },
         {
             name: "Week 2",
-            image: "https://i.ibb.co/LhKdRSj/week2.webp",
+            image: "https://i.imgur.com/4fkVuun.jpg",
             link: "/week2"
         },
         {
             name: "Week 3",
-            image: "https://i.ibb.co/KsL4qwN/week3.jpg",
+            image: "https://i.imgur.com/DqWRaSI.jpeg",
             link: "/week3"
         },
         {
             name: "Week 4",
-            image: "https://i.ibb.co/VJvvHfJ/image.png",
+            image: "https://i.imgur.com/TACN8XO.png",
             link: "/week4"
         },
         {
             name: "Week 5",
-            image: "https://i.ibb.co/YTBzCMG/week5.png",
+            image: "https://i.imgur.com/MKPWCep.png",
             link: "/week5"
         },
         {
             name: "Week 6",
-            image: "https://i.ibb.co/Vgv1KSr/week6.jpg",
+            image: "https://i.imgur.com/YqeTpBg.jpeg",
             link: "/week6"
         },
         {
             name: "Week 7",
-            image: "https://i.ibb.co/mqhP3yx/week7.jpg",
+            image: "https://i.imgur.com/jkmAQHu.jpg",
             link: "/week7"
         },
         {
             name: "Week 8",
-            image: "https://i.ibb.co/JnXTrRR/week8.png",
+            image: "https://i.imgur.com/0nrXoxB.png",
             link: "/week8"
         },
         {
             name: "Week 9",
-            image: "https://i.ibb.co/9nBc792/image.png",
+            image: "https://i.imgur.com/7FJRhIl.png",
             link: "/week9"
         },
         {
             name: "Week 10",
-            image: "https://i.ibb.co/D5PmfnZ/image.png",
+            image: "https://i.imgur.com/eX5adgi.jpg",
             link: "/week10"
         },
         {
             name: "Week 11",
-            image: "https://i.ibb.co/TL2qsN7/week11.png",
+            image: "https://i.imgur.com/4Lwp3Mn.jpg",
             link: "/week11"
         },
         {
             name: "Week 12",
-            image: "https://i.ibb.co/yXK0mVT/image.png",
+            image: "https://i.imgur.com/Fs8PoEC.jpg",
             link: "/week12"
         },
         {
             name: "Final Project",
-            image: "https://i.ibb.co/3WgcZJ5/finalproject.webp",
+            image: "https://i.imgur.com/oK2Vs9I.jpg",
             link: "/finalproject"
         }
     ]

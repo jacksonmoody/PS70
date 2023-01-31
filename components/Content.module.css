@@ -7,7 +7,7 @@
     transition-duration: 0.4s;
     width: 180px;
     height: 60px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 
@@ -16,17 +16,10 @@
     color: white;
 }
 
-.main {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .section {
     font-size: 3rem;
     font-weight: bolder;
-    margin: 40px;
+    margin-bottom: 50px;
 }
 
 .text {
@@ -42,4 +35,17 @@
 
 .link:hover {
     text-decoration: underline;
+}
+
+.circle {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+.content {
+    text-align: center;
 }
