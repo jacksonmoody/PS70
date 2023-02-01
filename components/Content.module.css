@@ -59,6 +59,16 @@
     overflow: hidden;
 }
 
+.rectangle {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
 .content {
     text-align: center;
     margin-left: 10%;
