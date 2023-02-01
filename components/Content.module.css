@@ -19,6 +19,7 @@
 .section {
     font-size: 3rem;
     font-weight: bolder;
+    margin-top: 25px;
     margin-bottom: 50px;
 }
 
@@ -26,6 +27,7 @@
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 40px;
+    margin-left: auto;
 }
 
 .link {
@@ -42,10 +44,23 @@
     overflow: hidden;
     height: 300px;
     width: 300px;
-    margin-left: 20%;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.square {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
 }
 
 .content {
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
 }
