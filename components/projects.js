@@ -27,12 +27,12 @@ export default function Projects() {
         },
         {
             name: "Week 4",
-            image: "https://i.imgur.com/TACN8XO.png",
+            image: "https://i.imgur.com/MKPWCep.png",
             link: "/week4"
         },
         {
             name: "Week 5",
-            image: "https://i.imgur.com/MKPWCep.png",
+            image: "https://i.imgur.com/TACN8XO.png",
             link: "/week5"
         },
         {
