@@ -6,11 +6,12 @@
     "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/material": "latest",
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@mui/material": "latest",
-    "@emotion/react": "latest",
-    "@emotion/styled": "latest"
+    "react-code-blocks": "^0.0.9-0",
+    "react-dom": "^18.2.0"
   }
 }
