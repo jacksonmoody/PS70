@@ -4,9 +4,10 @@ import Header from '../components/header'
 import styles from '../components/Content.module.css'
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
-import meshmixer from '../public/images/meshmixer.jpg';
+import scanresult from '../public/images/scanresult.JPG';
 import proposal1 from '../public/images/proposal1.png';
-import holder from '../public/images/Holder.jpg';
+import holder from '../public/images/holder.gif';
+import holderResult from '../public/images/holderresult.jpg';
 import scan from '../public/images/scan.jpeg';
 
 export default function Week5() {
@@ -42,11 +43,11 @@ export default function Week5() {
                         </Link>
                     </Grid>
                     <Grid item xs={12} sm={4} order={{ xs: 2, sm: 3 }}>
-                        <div className={styles.rectanglesmall}>
-                            <Image src={holder} alt="Holder CAD" fill style={{ objectFit: "contain" }} />
+                        <div className={styles.rectangle}>
+                            <Image src={holder} alt="Holder GIF" fill style={{ objectFit: "contain" }} />
                         </div>
-                        <div className={styles.rectanglesmall}>
-                            <Image src={holder} alt="Final Product" fill style={{ objectFit: "cover" }} />
+                        <div className={styles.square}>
+                            <Image src={holderResult} alt="Final Product" fill style={{ objectFit: "cover" }} />
                         </div>
                     </Grid>
                     <Grid item xs={12} order={{ xs: 4, sm: 4 }}>
@@ -68,11 +69,11 @@ export default function Week5() {
                         </Link>
                     </Grid>
                     <Grid item xs={12} sm={4} order={{ xs: 5, sm: 6 }}>
-                        <div className={styles.rectanglemargins}>
+                        <div className={styles.rectanglexs}>
                             <Image src={scan} alt="Original Scan" fill style={{ objectFit: "contain" }} />
                         </div>
-                        <div className={styles.square}>
-                            <Image src={meshmixer} alt="Meshmixer" fill style={{ objectFit: "contain" }} />
+                        <div className={styles.rectanglesmall}>
+                            <Image src={scanresult} alt="Results of Scan" fill style={{ objectFit: "contain" }} />
                         </div>
                     </Grid>
                     <Grid item xs={12} order={{ xs: 7, sm: 7 }}>
