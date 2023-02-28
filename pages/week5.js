@@ -4,7 +4,7 @@ import Header from '../components/header'
 import styles from '../components/Content.module.css'
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
-import scanresult from '../public/images/scanresult.JPG';
+import scanresult from '../public/images/scanresult.jpg';
 import proposal1 from '../public/images/proposal1.png';
 import holder from '../public/images/holder.gif';
 import holderResult from '../public/images/holderresult.jpg';
