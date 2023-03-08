@@ -37,7 +37,7 @@ export default function Projects() {
         },
         {
             name: "Week 6",
-            image: "https://i.imgur.com/YqeTpBg.jpeg",
+            image: "https://i.imgur.com/hHpDfzL.jpg",
             link: "/week6"
         },
         {
