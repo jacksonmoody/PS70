@@ -5,10 +5,10 @@ import styles from '../components/Content.module.css'
 import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import capacitance_chart from '../public/images/capacitance_chart.png';
-import capacitance_wiring from '../public/images/capacitance.JPG';
-import diode from '../public/images/diode.JPG';
+import capacitance_wiring from '../public/images/capacitance.jpg';
+import diode from '../public/images/diode.jpg';
 import diode_chart from '../public/images/photodiode_chart.png';
-import bottle_sensor from '../public/images/bottle_sensor.JPG';
+import bottle_sensor from '../public/images/bottle_sensor.jpg';
 import { CopyBlock, googlecode } from "react-code-blocks";
 
 export default function Week6() {
