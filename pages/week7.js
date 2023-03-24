@@ -6,6 +6,8 @@ import Grid from '@mui/material/Grid';
 import Image from 'next/image';
 import { CopyBlock, googlecode } from "react-code-blocks";
 import clock_diagram from '../public/images/clock_diagram.jpg';
+import oscilloscope from '../public/images/oscilloscope.jpeg';
+import sign from '../public/images/sign.jpg';
 
 export default function Week7() {
     const code = `
@@ -91,7 +93,6 @@ export default function Week7() {
             </Head>
             <Header image="https://i.imgur.com/SmP7OtJ.jpg" title="Week 7" />
 
-
             <div className={styles.content}>
                 <Grid container alignItems="flex-start" justifyContent="center" columnSpacing={10} sx={{ marginTop: 5 }}>
                     <Grid item xs={12} order={{ xs: 1, sm: 1 }}>
@@ -138,9 +139,39 @@ export default function Week7() {
                         <Link href="/files/Clock.zip" locale={false}>
                             <button className={styles.button}>Download Code</button>
                         </Link>
+                        <Grid item xs={12} order={{ xs: 3, sm: 3 }} mt={10}>
+                        <div className={styles.section}>
+                            Characterization of Piezo Buzzer
+                        </div>
+                        <div className={styles.text}>
+                          <p>To gain further insight into the way in which the Piezo Buzzer component of my circuit was operating, I decided to use the oscilloscope. The results of hooking the oscilloscope up to my buzzer while the melody from the code above played is shown below:</p>
+                        </div>
+                        <div className={styles.rectangle}>
+                            <Image src={oscilloscope} alt="Oscilloscope" fill style={{ objectFit: "cover" }} />
+                        </div>
+                        <div className={styles.text}>
+                            <p>As the image above demonstrates, the Arduino is sending square wave signals according to a fixed clock. That is, as a tone is playing, square waves appear. <strong>The period of these waves is approximately 23ms</strong>, and they appear at regular intervals as a tone is playing. However, when the tone stops, so do the waves. Indeed, the duration of these gaps between waves is proportional the amount of time between notes—thereby demonstrating how the waves shown in the oscilloscope are reflective of the signals being sent to the Piezo buzzer.</p>
+                        </div>
+                    </Grid>
+                    <Grid item xs={12} order={{ xs: 4, sm: 4 }} mt={10}>
+                        <div className={styles.section}>
+                            CNC Milling Preperation
+                        </div>
+                        <div className={styles.text}>
+                            <p>In preperation for next week's work on CNC milling, I also created a sample file to test cut <span>&#40;</span>so that I can learn to use the Shop Bot<span>&#41;</span>.</p>
+                            <p>In particular, I have always wanted a welcoming decoration for my dorm. Consequently, I decided to create the welcome sign pictured below using Fusion 360 and the spline tool <span>&#40;</span>to create the organic edges<span>&#41;</span>. I then exported a 2D version of the design as a .DXF file and brought it into Inkscape to assign colors to each path. Ultimately, I made the outline red to indicate a full exterior cut through the material, the star blue to indicate an interior cut halfway through the material, and the text green to indicate a pocket cut halfway through the material.</p>
+                            <p>I look forward to seeing how this design turns out on the Shop Bot next week!</p>
+                        </div>
+                        <div className={styles.rectanglesmall}>
+                            <Image src={sign} alt="Sign Design" fill style={{ objectFit: "contain" }} />
+                        </div>
+                        <Link href="/files/sign.dxf" locale={false}>
+                            <button className={styles.button}>Download Design</button>
+                        </Link>
                         <Link href="/">
                             <button className={styles.button}>Return Home</button>
                         </Link>
+                    </Grid>
                     </Grid>
             </div>
         </div>
