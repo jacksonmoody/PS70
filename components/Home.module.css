@@ -47,6 +47,7 @@
     transition-duration: 0.4s;
     width: 180px;
     height: 60px;
+    margin-right: 40px;
 }
 
 .button:hover {

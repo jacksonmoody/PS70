@@ -72,7 +72,7 @@ export default function Projects() {
         },
         {
             name: "Final Project",
-            image: "https://i.imgur.com/oK2Vs9I.jpg",
+            image: "https://i.imgur.com/UlsyO94.jpg",
             link: "/finalproject"
         }
     ]

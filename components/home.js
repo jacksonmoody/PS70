@@ -19,6 +19,9 @@ export default function Home() {
                     <Link href="/about">
                         <button className={styles.button}>About Me</button>
                     </Link>
+                    <Link href="/finalproject">
+                        <button className={styles.button}>Final Project</button>
+                    </Link>
                 </div>
             </div>
         </div>
