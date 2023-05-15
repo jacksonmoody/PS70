@@ -9,7 +9,6 @@ import alarm2 from '../public/images/alarm2.jpeg';
 import alarm3 from '../public/images/alarm3.jpeg';
 import alarm4 from '../public/images/alarm4.jpeg';
 import backing from '../public/images/backing.jpg';
-import button from '../public/images/button.jpg';
 import clockcomponents from '../public/images/clockcomponents.jpeg';
 import clocksoftware from '../public/images/clocksoftware.jpg';
 import cover from '../public/images/cover.jpg';
@@ -591,17 +590,17 @@ module.exports = app;
                             Project Motivation & Overview
                         </div>
                         <div className={styles.text}>
-                            <p>For the entirety of first semester (and much of second semester as well), I struggled to wake up on time. Using only my phone's built in clock app, I found it too easy to sleep through alarms or ignore them until I was late for class. When I nearly missed a final exam, I knew it was time for a change.</p>
-                            <p>Ultimately, this change came in the form of a "smart alarm clock"—one with more features than the average alarm clock to truly motivate me to get out of bed. In particular, the alarm clock that I created is able to play a tone, open the blinds, and spray you with water when it is time to wake up.</p>
-                            <p>As portrayed in the video above, the process for utilizing this alarm clock is as follows:</p>
+                            <p>For almost the entirety of the first semester (and much of second semester as well), I struggled to wake up on time. Using only my phone's built in clock app, I found it too easy to sleep through alarms or ignore them until I was late for class. When I nearly missed a final exam, I knew it was time for a change.</p>
+                            <p>Ultimately, this change came in the form of a "smart alarm clock"—one with enough features to truly motivate me to get out of bed. In particular, the alarm clock that I created is able to play a tone, open the blinds, and spray you with water when it is time to wake up.</p>
+                            <p>As portrayed in the video above, the process for using this alarm clock is as follows:</p>
                             <ol className={styles.list}>
                                 <li>Set the alarm using the web interface at <a href="https://ps-70-clock.vercel.app/" target="_blank">www.ps-70-clock.vercel.app</a></li>
-                                <li>Wait for the alarm to sound at the desired time.</li>
+                                <li>Wait for the alarm to sound at the set time.</li>
                                 <li>Initially, the alarm clock will play a pleasent tone and open the blinds.</li>
-                                <li>If the button is pressed during this time, then the alarm will be silenced and the system will reset.</li>
+                                <li>If the button is pressed during this time, the alarm will be silenced and the system will reset.</li>
                                 <li>However, if the alarm is not silenced during the initial song, the system will begin spraying water out of a nozzle and playing a more aggrevating tone until it is silenced.</li>
                             </ol>
-                            <p>While this system is not perfect, it is certainly more motivating than my previous alarm clock! Indeed, I look forward to using it for all of my early-morning alarms going forward!</p>
+                            <p>While this system is not perfect, it is certainly more motivating than my previous alarm clock! Indeed, I look forward to using it for all of my early-morning alarms going forward.</p>
                         </div>
                     </Grid>
                     <Grid item xs={4}>
@@ -624,20 +623,20 @@ module.exports = app;
                             Bill of Materials
                         </div>
                         <div className={styles.text}>
-                            To create this project, I used the following components. To keep things simple and affordable, all of these components were sourced directly from the lab!
+                            To create this project, I used the following components. To keep things simple and affordable, all of these components were sourced directly from the lab.
                             <ul className={styles.list}>
-                                <li>2 x ESP32 S2 - To control the alarm clock system and shade/water system, respectively.</li>
+                                <li>2 x ESP32 S2 - To control the alarm clock system and shade/water system, respectively</li>
                                 <li>1 x LCD Screen - To display the appropriate time and alarm status</li>
                                 <li>1 x Piezo Buzzer (Large) - To generate alarm sounds as appropriate</li>
                                 <li>1 x Small Tactile Button - For silencing the alarm</li>
-                                <li>1 x DC 3V 12A Mini Air Pump - To spray water from the reservoir onto the sleeping person</li>
+                                <li>1 x DC 3V 12A Mini Air Pump - To spray water from the reservoir</li>
                                 <li>1 x 5V Relay Module - To control power to the pump</li>
                                 <li>1 x Nema 17 Stepper Motor - To raise and lower the blinds</li>
                                 <li>1 x DRV8834 Low-Voltage Stepper Driver - To control the stepper motor</li>
                                 <li>1 x 100uF Capacitor - For protecting the stepper motor driver from voltage spikes</li>
                                 <li>1 x 10kΩ Resistor - For reading the digital input from the button</li>
                                 <li>6 x M6 x 10mm Screws - For assembling the stepper motor holder and attaching it to the rest of the system</li>
-                                <li>2 x 5V Power Supply - To power the alarm clock and shade/water systems</li>
+                                <li>2 x 5V Power Supply - For powering the alarm clock and shade/water systems</li>
                                 <li>1 x 6mm Thick Sheet of Plywood - For laser cutting the respective component housings</li>
                                 <li>~250 g of PLA Plastic - For 3D printing the necessary components</li>
                             </ul>
@@ -648,25 +647,25 @@ module.exports = app;
                             Component Overview
                         </div>
                         <div className={styles.text}>
-                            <p>As can be seen in the demo video above, this alarm clock is actually composed of three subsystems—a software system to set the alarm time and transmit it to the ESP32s, an alarm clock system to display the current time and sound an alarm, and a shade/water subsystem to open the blinds and spray the user with water, respectively. </p>
-                            <p>While the latter two subsystems could have technically been combined into one, I made the decision early on to seperate them. Not only did this allow me to position the spray nozzle and blind pulling system exactly where I wanted it, but it also forces the user to move further to silence the alarm—thereby ensuring that you are even more awake by the time the alarm is finished.</p>
-                            <p>To create this project, I worked on each of the three subsystems in weeks 10, 11, and 12/13, respectively. My week by week progress on each of these three subsystems can be seen in the documentation below!</p>
+                            <p>As can be seen in the demo video above, this alarm clock is actually composed of three subsystems—a software system to set the time and transmit it to the ESP32s, an alarm clock system to display the current time and sound an alarm, and a shade/water system to open the blinds and spray the user with water. </p>
+                            <p>While the latter two systems <i>could</i> have been combined into one, I made the decision early on to seperate them. Not only did this allow me to position the spray nozzle and blind pulling system exactly where I wanted it, but it also forced the user to move further to silence the alarm—thereby ensuring that you are even more awake by the time the alarm is finished.</p>
+                            <p>To create this project, I worked on each of the three systems in weeks 10, 11, and 12/13, respectively. My week by week progress on each of these systems can be seen in the documentation below!</p>
                         </div>
                     </Grid>
                     <Grid item xs={12} mt={10}>
-                        <div className={styles.section}>
+                        <div className={styles.section} id="SoftwareSystem">
                             Software System (Week 10)
                         </div>
                         <div className={styles.rectanglemargins}>
                             <Image src={clocksoftware} alt="Software" fill style={{ objectFit: "contain" }} />
                         </div>
                         <div className={styles.text}>
-                            <p>In week 10, we were tasked with "making a serious attempt at the most challenging/intimidating aspect of [the] final project." Seeing as I was making an alarm clock, some of the most critical aspects to nail down were those surrounding time telling.</p>
-                            <p>In particular, I decided early on that it would be more interesting to have users set the time on an internet-connected device rather than on the alarm clock itself. However, to create this functionality, I needed to develop both a frontend and a backend application. Ultimately, I chose to accomplish this by building a frontend site using React and Material UI, and a backend using Node.js and Express.</p>
+                            <p>In week 10, we were tasked with "making a serious attempt at the most challenging/intimidating aspect of [the] final project." Seeing as I was making an alarm clock, some of the most critical aspects to nail down were those surrounding the time.</p>
+                            <p>In particular, I decided early on that it would be more interesting to have users set the time on an internet-connected device rather than on the alarm clock itself. However, to create this functionality, I needed to develop both a frontend and a backend application. Ultimately, I chose to accomplish this by building a frontend site using React and Material UI, and a backend API using Node.js and Express.</p>
                             <p>On the frontend, I used the built-in Date() object in Javascript to determine the current time and <a href="https://mui.com/x/react-date-pickers/time-picker/" target="_blank">Material UI's time picker component</a> to allow users to choose a desired alarm time. Once they do so, it is displayed and sent to the backend via a POST request.</p>
-                            <p>The backend itself was built using Node.js and Express, with seperate endpoints for the alarm time and the state that the alarm clock is currently in (with different integers corresponding to the shade opening, water spraying, etc.) Moreover, both the frontend and backend sites were hosted using <a href="https://vercel.com/dashboard" target="_blank">Vercel</a>—a tool for deploying basic web applications for free. This allowed me (and anyone else) to use both the frontend and backend 24/7!</p>
-                            <p>To finish the minimum viable product, I used an <a href="https://nathanmelenbrink.github.io/ps70/09_networking/index.html" target="_blank">in-class tutorial that we had followed</a> to connect an ESP32 to the internet and to the backend that I had just created. To ensure that the ESP32 always had the current time, I also connected it to <a href="https://timeapi.io/" target='_blank'>timeapi.io</a>—a free API that returns the time in an easy to work with format. By the end of the week, the ESP32 was able to print out whether or not the current time matched the alarm time that the user had set!</p>
-                            <p>For reference, the full code for both the frontend site and backend API is displayed below:</p>
+                            <p>The backend itself was built using Node.js and Express, with seperate endpoints for the alarm time and the state that the alarm clock is currently in (with different integers corresponding to the shade opening, water spraying, etc.) Moreover, both the frontend and backend sites were hosted using <a href="https://vercel.com/dashboard" target="_blank">Vercel</a>—a tool for deploying basic web applications for free. This allowed me (and anyone else) to use both the frontend and backend 24/7.</p>
+                            <p>To finish the minimum viable product, I used an <a href="https://nathanmelenbrink.github.io/ps70/09_networking/index.html" target="_blank">in-class tutorial that we had followed</a> to connect an ESP32 to the internet and to the backend that I had just created. To ensure that the ESP32 always had the current time, I also connected it to <a href="https://timeapi.io/" target='_blank'>timeapi.io</a>—a free API that returns the time in an easy to use format. By the end of the week, the ESP32 was able to print out whether or not the current time matched a time the user had set!</p>
+                            <p>For reference, the full code for both the frontend site and backend API is below:</p>
                         </div>
                         <a href="https://ps-70-clock.vercel.app/" target="_blank">
                             <button className={styles.button}>Frontend Site</button>
@@ -700,15 +699,15 @@ module.exports = app;
                         </div>
                     </Grid>
                     <Grid item xs={12} mt={10}>
-                        <div className={styles.section}>
+                        <div className={styles.section} id="AlarmSystem">
                             Alarm Clock System (Week 11)
                         </div>
                         <div className={styles.text}>
                            <p>In week 11, we were tasked with working on the "integrated design" of our project. For me, this meant taking the ESP32 that I had connected to the internet last week and connecting it with the other components.</p>
-                           <p>In particular, I followed <a href="https://randomnerdtutorials.com/esp32-esp8266-i2c-lcd-arduino-ide/" target="_blank">this Random Nerd Tutorial</a> to connect the ESP32 to an LCD display using I2C. Using my work from <Link href="/week7" target="_blank">Week 7,</Link> I also connected the ESP32 to a piezo buzzer and a button. By modifying the code from the previous week, I was then able to make it such that the LCD displayed the current time and the buzzer played a tune if the current time matched the alarm time set by the user!</p>
-                           <p>Importantly, I also made it such that the ESP32 sent a POST request to the backend anytime the alarm when off or if the user pressed the button. Ultimately, this would allow the other system (with the blinds and water) to stay up to date with the current state of the alarm.</p>
-                           <p>Once everything was working correctly, I used <a href="https://en.makercase.com/" target="_blank">MakerCase</a> to create an enclosure for the system. After adding holes to the result using <a href="https://inkscape.org/" target="_blank">Inkscape</a>, I then laser cut the enclosure out of 6mm thick wood and 3D printed a custom button for the top.</p>
-                           <p>For reference, the full code running on the ESP32 is displayed below, along with download links to the custom button and the files for laser cutting the enclosure.</p>
+                           <p>In particular, I followed <a href="https://randomnerdtutorials.com/esp32-esp8266-i2c-lcd-arduino-ide/" target="_blank">this Random Nerd Tutorial</a> to connect the ESP32 to an LCD display using I2C. Using my work from <Link href="/week7" target="_blank">Week 7,</Link> I also connected the ESP32 to a piezo buzzer and a button. By modifying the code from the previous week, I was able to make it such that the LCD displayed the current time and the buzzer played a tune if the current time matched a time set by the user.</p>
+                           <p>Importantly, I also made it such that the ESP32 sent a POST request to the backend anytime the alarm went off or if the user pressed the silence button—this allows the other system (with the blinds and water) to stay up to date with the current state of the alarm.</p>
+                           <p>Once everything was working correctly, I used <a href="https://en.makercase.com/" target="_blank">MakerCase</a> to create an enclosure for the system. After adding holes using <a href="https://inkscape.org/" target="_blank">Inkscape</a>, I then laser cut the enclosure out of 6mm thick wood and 3D printed a custom button for the top.</p>
+                           <p>For reference, the full code running on the ESP32 is below, along with download links to the custom button and files for laser cutting the enclosure.</p>
                         </div>
                     </Grid>
                     <Grid item xs={6}>
@@ -738,16 +737,16 @@ module.exports = app;
                         </div>
                     </Grid>
                     <Grid item xs={12} mt={10}>
-                        <div className={styles.section}>
+                        <div className={styles.section} id="MotorSystem">
                             Shade/Water System (Weeks 12/13)
                         </div>
                         <div className={styles.text}>
-                            <p>In our final weeks, the primary focus was on wrapping up the final project and tying up any loose ends. For me, this meant building out the other subsystem of the alarm clock: the one controlling the blinds and water pump.</p>
-                            <p>From a software perspective, the code for this system was probably the simplest of the three. Indeed, the ESP32 simply polls the backend API using GET requests and instructs the stepper motor and/or pump if the latest state does not match the state the system is currently in.</p>
+                            <p>In our final weeks, the focus was on wrapping up the final project and tying up any loose ends. For me, this meant building out the last subsystem of the alarm clock: the one controlling the blinds and water pump.</p>
+                            <p>From a software perspective, the code for this system was probably the simplest of the three. Indeed, the ESP32 simply polls the backend API using GET requests and instructs the stepper motor and/or pump if the latest state does not match the current state.</p>
                             <p>With regard to hardware, however, this system was definitely the most complex. In particular, I needed to 3D print an entire mount for the stepper motor, a water reservoir for the pump, and a nozzle to concentrate the spray of the water.</p>
-                            <p>While the reservoir and casing for the stepper motor were relatively straightforward to design and print (and indeed, I could take inspiration from <a href="https://www.thingiverse.com/thing:2631414" target="_blank">many similar designs</a>), I ran into significant difficulties with the gear attached to the stepper motor and the nozzle. Indeed, both prints had very tight tolerances—they had to align exactly with the blinds in my room and with the hose, respectively. Luckily, seeing as 3D printing is a technology designed for rapid prototyping, I was able to iterate quickly through different designs until I found ones that worked.</p>
-                            <p>From there, it was simply a matter of wiring everything together and fitting it within a laser cut enclosure (using a similar process as with the Week 11 system). To my surprise, everything still worked once put together—I was ready to present!</p>
-                            <p>For reference, the full code running on the ESP32 is displayed below, along with download links to the stepper motor case, water reservoir, nozzle, and laser cut enclosure.</p>
+                            <p>While the reservoir and casing for the stepper motor were relatively straightforward to design and print (and indeed, I took inspiration from <a href="https://www.thingiverse.com/thing:2631414" target="_blank">many similar designs</a>), I ran into significant difficulties with the gear attached to the stepper motor and the nozzle. Indeed, both prints had very tight tolerances—they had to align exactly with the blinds in my room and with the hose, respectively. However, seeing as 3D printing is a technology designed for rapid prototyping, I was able to iterate quickly through different designs until I found ones that worked.</p>
+                            <p>From there, it was simply a matter of wiring everything together and fitting it within a laser cut enclosure (using a similar process as with the Week 11 system). To my surprise, everything still worked once put together—I was ready to start using my alarm!</p>
+                            <p>For reference, the full code running on the ESP32 is below, along with download links to the stepper motor case, water reservoir, nozzle, and laser cut enclosure.</p>
                         </div>
                     </Grid>
                     <Grid item xs={6}>
@@ -793,13 +792,13 @@ module.exports = app;
                     <Grid item xs={12}>
                         <div className={styles.text}>
                             <Link href="/files/blind_print.zip" locale={false}>
-                                <button className={styles.button}>Download Shade Holder 3D Print</button>
+                                <button className={styles.button}>Download Motor Casing 3D Print</button>
                             </Link>
                             <Link href="/files/nozzle.stl" locale={false}>
                                 <button className={styles.button}>Download Nozzle 3D Print</button>
                             </Link>
                             <Link href="/files/waterholder.stl" locale={false}>
-                                <button className={styles.button}>Download Water Reservoir 3D Print</button>
+                                <button className={styles.button}>Download Reservoir 3D Print</button>
                             </Link>
                             <Link href="/files/motorboxnewest.pdf" locale={false}>
                                 <button className={styles.button}>Download Laser Cutting Files</button>
@@ -820,8 +819,8 @@ module.exports = app;
                         </div>
                         <div className={styles.text}>
                             <p>Overall, I am quite happy with how this project turned out! It accomplishes everything that I set out for it to do, and I look forward to using it in my own life in the coming semesters. While I put countless hours into this project (and spent many late nights in the lab), seeing it all come together and being able to present it to others at the PS70 fair made it all worth it!</p>
-                            <p>That being said, no project is perfect, and there are certainly a couple areas I could improve on if given more time. In particular, the current software is only designed to handle one alarm at a time and one alarm clock at a time. However, it could be cool to scale it up to multiple devices with multiple alarms on each. Additionally, the 3D printed water reservoir is subject to leaking and cannot be sealed off (if, for instance, you wanted to transport the clock upside down). However, this issue could be resolved through use of vacuum forming or a similar technology.</p>
-                            <p>In the future, I look forward to working on these goals and taking this project to the next level. If you're interested in learning more or helping me out, please <a href="mailto:jacksonmoody@college.harvard.edu">reach out!</a></p>
+                            <p>That being said, no project is perfect, and there are certainly a couple areas that I could improve upon if given more time. In particular, the current software is only designed to handle one alarm and alarm clock at a time. However, it would be cool to scale the backend up to handle multiple devices with multiple alarms on each. Additionally, the 3D printed water reservoir is subject to leaking and cannot be sealed off. However, this issue could be resolved using vacuum forming or a similar technology.</p>
+                            <p>Going forward, I want to continue working on these goals and really take this project to the next level. If you're interested in learning more or helping me out, please <a href="mailto:jacksonmoody@college.harvard.edu">reach out!</a></p>
                         </div>
                         <Link href="/">
                             <button className={styles.button}>Return Home</button>

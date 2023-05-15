@@ -57,18 +57,23 @@ export default function Projects() {
         },
         {
             name: "Week 10",
-            image: "https://i.imgur.com/eX5adgi.jpg",
+            image: "https://i.imgur.com/H9H5keg.jpg",
             link: "/week10"
         },
         {
             name: "Week 11",
-            image: "https://i.imgur.com/4Lwp3Mn.jpg",
+            image: "https://i.imgur.com/tYkNIiE.jpg",
             link: "/week11"
         },
         {
             name: "Week 12",
-            image: "https://i.imgur.com/Fs8PoEC.jpg",
+            image: "https://i.imgur.com/nbnH9S9.jpg",
             link: "/week12"
+        },
+        {
+            name: "Week 13",
+            image: "https://i.imgur.com/j54emVf.jpg",
+            link: "/week13"
         },
         {
             name: "Final Project",
